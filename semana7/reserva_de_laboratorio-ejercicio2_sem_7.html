@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de Laboratorio</title>
+</head>
+<body>
+
+    <h1>Formulario de Reserva de Laboratorio</h1>
+
+    <form>
+
+        <!-- DATOS DEL DOCENTE -->
+        <div>
+            <h3>Datos del Docente</h3>
+
+            <label for="docente">Nombre del Docente:</label><br>
+            <input type="text" id="docente" name="docente"
+                   placeholder="Ingrese el nombre del docente"
+                   required><br><br>
+
+            <label for="codigo">Código Docente:</label><br>
+            <input type="text" id="codigo" name="codigo"
+                   placeholder="Ingrese código"
+                   maxlength="10"><br><br>
+
+            <label for="correo">Correo Institucional:</label><br>
+            <input type="email" id="correo" name="correo"
+                   placeholder="correo@instituto.edu.pe"
+                   required><br><br>
+        </div>
+
+        <!-- DATOS DE LA RESERVA -->
+        <div>
+            <h3>Datos de la Reserva</h3>
+
+            <label for="curso">Curso:</label><br>
+            <input type="text" id="curso" name="curso"
+                   placeholder="Ingrese el curso"
+                   required><br><br>
+
+            <label for="fecha">Fecha de Reserva:</label><br>
+            <input type="date" id="fecha" name="fecha"
+                   required><br><br>
+
+            <label for="turno">Turno:</label><br>
+            <select id="turno" name="turno">
+                <option value="">Seleccione</option>
+                <option>Mañana</option>
+                <option>Tarde</option>
+                <option>Noche</option>
+            </select><br><br>
+
+            <label for="estudiantes">Número de Estudiantes:</label><br>
+            <input type="number" id="estudiantes" name="estudiantes"
+                   min="1" max="40"><br><br>
+
+            <label for="equipos">Equipos Necesarios:</label><br>
+            <select id="equipos" name="equipos" multiple>
+                <option>Laptops</option>
+                <option>Proyector</option>
+                <option>Impresora</option>
+                <option>Pizarra Digital</option>
+            </select><br><br>
+
+            <label for="observaciones">Observaciones:</label><br>
+            <textarea id="observaciones" name="observaciones"
+                      maxlength="300"
+                      placeholder="Ingrese observaciones"></textarea><br><br>
+        </div>
+
+        <button type="submit">Enviar Solicitud</button>
+
+    </form>
+
+</body>
+</html>

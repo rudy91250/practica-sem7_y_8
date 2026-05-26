@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Búsqueda de Productos</title>
+</head>
+<body>
+
+    <h1>Formulario de Búsqueda</h1>
+
+    <form action="buscar.php" method="GET">
+
+        <!-- Campo nombre del producto -->
+        <label for="producto">Nombre del Producto:</label><br>
+        <input type="text" id="producto" name="producto"
+               placeholder="Ingrese producto"
+               required><br><br>
+
+        <!-- Campo categoría -->
+        <label for="categoria">Categoría:</label><br>
+        <select id="categoria" name="categoria">
+            <option value="">Seleccione</option>
+            <option value="Tecnología">Tecnología</option>
+            <option value="Ropa">Ropa</option>
+            <option value="Alimentos">Alimentos</option>
+            <option value="Otros">Otros</option>
+        </select><br><br>
+
+        <!-- Campo precio máximo -->
+        <label for="precio">Precio Máximo:</label><br>
+        <input type="number" id="precio" name="precio"
+               min="1"
+               placeholder="Ingrese precio"><br><br>
+
+        <!-- Botón enviar -->
+        <input type="submit" value="Buscar">
+
+    </form>
+
+</body>
+</html>

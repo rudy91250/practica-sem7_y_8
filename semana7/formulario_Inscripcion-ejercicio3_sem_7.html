@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscripción a Evento</title>
+</head>
+<body>
+
+    <h1>Formulario de Inscripción</h1>
+
+    <form>
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label for="nombre">Nombre Completo:</label><br>
+            <input type="text" id="nombre" name="nombre"
+                   placeholder="Ingrese su nombre completo"
+                   required><br><br>
+
+            <label for="correo">Correo:</label><br>
+            <input type="email" id="correo" name="correo"
+                   placeholder="ejemplo@gmail.com"
+                   required><br><br>
+
+            <label for="dni">DNI:</label><br>
+            <input type="text" id="dni" name="dni"
+                   pattern="[0-9]{8}"
+                   placeholder="Ingrese 8 dígitos"
+                   required><br><br>
+
+            <label for="institucion">Institución:</label><br>
+            <input type="text" id="institucion" name="institucion"
+                   placeholder="Ingrese institución"
+                   required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información del Evento</legend>
+
+            <label for="participacion">Tipo de Participación:</label><br>
+            <select id="participacion" name="participacion" required>
+                <option value="">Seleccione</option>
+                <option>Ponente</option>
+                <option>Asistente</option>
+            </select><br><br>
+
+            <label for="area">Área Temática:</label><br>
+            <select id="area" name="area" required>
+                <option value="">Seleccione</option>
+                <option>Tecnología</option>
+                <option>Educación</option>
+                <option>Innovación</option>
+            </select><br><br>
+
+            <label for="archivo">Archivo de Resumen:</label><br>
+            <input type="file" id="archivo" name="archivo"
+                   required><br><br>
+        </fieldset>
+
+        <input type="submit" value="Inscribirse">
+
+    </form>
+
+</body>
+</html>

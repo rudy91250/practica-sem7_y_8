@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Contacto POST</title>
+</head>
+<body>
+
+    <h1>Formulario de Contacto - Método POST</h1>
+
+    <form action="contacto.php" method="POST">
+
+        <label for="nombres">Nombres Completos:</label><br>
+        <input type="text" id="nombres" name="nombres"
+               required><br><br>
+
+        <label for="correo">Correo de Respuesta:</label><br>
+        <input type="email" id="correo" name="correo"
+               required><br><br>
+
+        <label for="asunto">Asunto:</label><br>
+        <select id="asunto" name="asunto">
+            <option value="">Seleccione</option>
+            <option>Consulta</option>
+            <option>Reclamo</option>
+            <option>Sugerencia</option>
+            <option>Otro</option>
+        </select><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje"
+                  minlength="10"
+                  required></textarea><br><br>
+
+        <input type="submit" value="Enviar Mensaje">
+
+    </form>
+
+</body>
+</html>
